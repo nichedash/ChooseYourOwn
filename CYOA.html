@@ -1,70 +1,43 @@
 <html>
-
-<head>
-    
-<title>Choose Your Own Adventure</title>
-
-<link rel="stylesheet" type="text/css" href="style.css">
-    
-</head>
+    <head>
+        <title>Choose Your Own Adventure</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
 
     
 <body>
-
-<div class="full">
-            
-    <div class="header">
-        <img class="header-img" src="header-cropped.png">
-        <p class="heading"><b>Choose Your Own Adventure!</b></p>
-    </div>
-                    
-                <div class="main">
-                
-                    <script>
-function getOption() {
-  var obj = document.getElementById("mySelect");
-  document.getElementById("demo").innerHTML = 
-  obj.options[obj.selectedIndex].text;
-}
-</script>
-</head>
-<body>
-
-<form>
-
-<select id="mySelect" onclick="getOption()">
-      <option>Choose Your Character</option>
-      <option>Foreign</option>
-      <option>Hephestia</option>
-      <option>Salvador</option>
-      <option>Tak</option>
-      <option>Sandro</option>
-      <option>Dinim</option>
-      <option>Hecate</option>
-      <option>Justin</option>
-</select>
-<br><br>
-<input type="button" value="Play As This Character">
-
-</form>
-    
-<p id="demo"></p>
-
-            </div>
-    
-    
-</div>
-    
-    
-    
+    <div class="full"> 
+        <div class="header">
+            <img class="header-img" src="header-cropped.png">
+            <p class="heading"><b>Choose Your Own Adventure!</b></p>
+        </div>           
+        <div class="main">        
+            <script>
+            function getOption() {
+              var obj = document.getElementById("mySelect");
+              document.getElementById("demo").innerHTML = 
+              obj.options[obj.selectedIndex].text;
+            }
+            </script>
+            <form>
+            <select id="mySelect" onclick="getOption()">
+                  <option>Choose Your Character</option>
+                  <option>Foreign</option>
+                  <option>Hephestia</option>
+                  <option>Salvador</option>
+                  <option>Tak</option>
+                  <option>Sandro</option>
+                  <option>Dinim</option>
+                  <option>Hecate</option>
+                  <option>Justin</option>
+            </select>
+            <br><br>
+            <input type="button" value="Play As This Character">
+            </form>
+            <p id="demo"></p>
+        </div>
+    </div>    
 </body>
-
-
-
-
-
-
-
 
 
 
